@@ -1,0 +1,16 @@
+import stcindex
+
+G=stcindex.grid_graph(10,10)
+print(f"Grid 10x10: n={G.number_of_nodes()},STC index={stcindex.stc_index(G):.6f}")
+G1=stcindex.star_graph(2)
+print(f"Star graph: n={G1.number_of_nodes()},STC index={stcindex.stc_index(G1):.6f}")
+G2=stcindex.star_graph(4)
+print(f"Star graph: n={G2.number_of_nodes()},STC index={stcindex.stc_index(G2):.6f}")
+G3=stcindex.wheel_graph(1000)
+print(f"Wheel graph: n={G3.number_of_nodes()},STC index={stcindex.stc_index(G3):.6f}")
+G4=stcindex.ladder_graph(1000)
+print(f"Ladder graph: n={G4.number_of_nodes()},STC index={stcindex.stc_index(G4):.6f}")
+G5=stcindex.petersen_graph()
+print(f"Petersen graph: n={G5.number_of_nodes()},STC index={stcindex.stc_index(G5):.6f}")
+G6=stcindex.wheel_graph(10000)
+print(f"Wheel graph: n={G6.number_of_nodes()},STC index={stcindex.stc_index(G6):.6f}")

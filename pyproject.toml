@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stcindex"
+version = "0.1.0"
+authors = [{name = "AbishaJ", email = "abisha000001@gmail.com"}]
+description = "Spanning Tree Complexity Index using MST degrees"
+requires-python = ">=3.8"
+dependencies = ["networkx>=3.0"]
